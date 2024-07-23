@@ -4,6 +4,18 @@
     box-sizing: 0;
 }
 
+:root {
+    --color-primary: #FFAF61;
+    --color-secondary: #F4538A;
+    --color-third: #45FFCA;
+    --color-btn-whatsapp: rgb(92, 223, 87);
+    --color-black: #000000;
+}
+
+.logo {
+    color: var(--color-secondary);
+}
+
 .navigation {
     border: 1px solid red;
     list-style: none;
@@ -13,5 +25,22 @@
 .navigation .nav-item {
     border: 1px solid yellow;
     display: inline-block;
-    gap: 3rem;
+}
+
+.slogan {
+    color: var(--color-secondary);
+}
+
+.slogan span {
+    color: var(--color-black);
+}
+
+.btn {
+    padding: .7rem;
+    background-color: var(--color-third);
+    border-radius: 1rem;
+}
+
+.btn-whatsApp {
+    color: var(--color-btn-whatsapp);
 }
