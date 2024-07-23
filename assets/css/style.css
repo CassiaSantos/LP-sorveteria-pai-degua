@@ -1,6 +1,16 @@
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: 0;
-    border: none;
+}
+
+.navigation {
+    border: 1px solid red;
+    list-style: none;
+}
+
+.navigation .nav-item {
+    border: 1px solid yellow;
+    display: inline-block;
+    gap: 3rem;
 }
