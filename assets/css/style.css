@@ -5,9 +5,8 @@
 }
 
 :root {
-    --color-primary: #ffaf61;
-    --color-secondary: #f4538a;
-    --color-third: #45ffca;
+    --color-primary: #f4538a;
+    --color-secondary: #45ffca;
     --color-btn-whatsapp: rgb(92, 223, 87);
     --color-black: #000000;
     --color-white: white;
@@ -17,20 +16,28 @@ body {
     font-family: "PT Serif", serif;
     font-weight: 400;
     font-style: normal;
+    color: var(--color-black);
 }
 
-.logo {
-    color: var(--color-secondary);
+.logo, .alert-page-not-found {
+    color: var(--color-primary);
     font-family: "Oleo Script", system-ui;
     font-weight: 700;
     font-style: normal;
+    font-size: 2.4rem;
+    display: block;
     padding: 2rem 2rem 0;
     margin: auto;
+    text-align: center;
 }
 
 .navigation {
     list-style: none;
+    padding: .5rem;
     margin: 0 auto;
+    max-width: 100vw;
+    text-align: center;
+    font-size: 1.2rem;
 }
 
 .navigation .nav-item {
@@ -40,7 +47,11 @@ body {
 
 a {
     text-decoration: none;
-    color: black;
+    color: var(--color-black) !important;
+}
+
+a:visited {
+    color: var(--color-primary);
 }
 
 .main {
@@ -49,42 +60,51 @@ a {
 }
 
 .slogan {
-    color: var(--color-secondary);
+    color: var(--color-primary);
+    text-align: center;
+    font-family: "Oleo Script", system-ui;
+    font-size: 1.8rem;
 }
 
-.slogan span {
-    color: var(--color-black);
+img {
+    max-width: 80%;
+     /* Centraliza a imagem: */
+    /* para centralizar apenas uma imagem, a propriedade display deve ser alterada para block. Dessa forma apenas uma imagem é colocada na linha */
+    /* O segundo valor, entretanto, deve sempre ser auto para colocar a imagem bem no centro, contudo esse recurso funciona apenas para uma imagem de cada vez. */
+    display: block;
+    margin: 0 auto;
 }
 
 .primary-img {
-    max-width: 80%;
-    border-radius: 50%;
-    margin: auto;
+    border-radius: 50%;   
+}
+
+.secondary-img {
+    border-radius: 12%;   
 }
 
 h2 {
     font-family: "Oleo Script", system-ui;
     font-weight: 700;
     font-style: normal;
+    text-align: center;
 }
 
 .btn {
-    padding: 0.7rem;
-    background-color: var(--color-third);
+    padding: 0.8rem;
+    background-color: var(--color-secondary);
     border-radius: 1rem;
     border: none;
-    margin: 2rem;
+    display: block;
+    margin: 2rem auto;
+    font-weight: bold;
+    font-size: 1.2rem;
 }
 
 p {
     font-size: 1.2rem;
     line-height: 1.8rem;
-}
-
-
-.secondary-img {
-    max-width: 80%;
-    margin: auto;
+    padding-top: 1.5rem;
 }
 
 .reason {
@@ -92,36 +112,35 @@ p {
     font-weight: bold;
 }
 
-.reasons>p{
-    padding-bottom: 2rem;
+.follow-me-section .bi {
+    padding: .8rem !important;
+    font-size: 2rem;
 }
 
-.cta {
-    padding-bottom: 0 !important;
-}
-
-.follow-me .bi {
-    padding: .5rem !important;
-}
-
-.follow-me>p {
+.follow-me-section>p {
     padding-bottom: 1rem;
+    text-align: center;
+}
+
+.follow-me-section .social-midia-icons{
+    text-align: center;
 }
 
 .btn-whatsApp {
-    color: var(--color-white);
+    color: var(--color-white) !important;
     background-color:var(--color-btn-whatsapp);
-    padding: .8rem;
-    border-radius: 1rem;
+    padding: 1rem;
+    border-radius: 1.5rem;
     position: fixed;
     right: 2rem;
     bottom: 3rem;
 }
 
 footer, footer a {
-    background-color: var(--color-secondary);
-    color: var(--color-white);
+    background-color: var(--color-primary);
+    color: var(--color-white) !important;
     padding: .5rem;
+    text-align: center;
 }
 
 footer .logo {
@@ -129,11 +148,9 @@ footer .logo {
 }
 
 footer p {
-    padding: 1rem;
+    margin: 2rem;
 }
 
-/* Responsividade: */
-@media (min-width: 67rem) { 
-   
-       
+.pb-1 {
+    padding-bottom: 1rem;
 }
