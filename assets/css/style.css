@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: 0;
+    box-sizing: border-box;
 }
 
 :root {
@@ -10,13 +10,13 @@
     --color-third: #45ffca;
     --color-btn-whatsapp: rgb(92, 223, 87);
     --color-black: #000000;
+    --color-white: white;
 }
 
 body {
     font-family: "PT Serif", serif;
     font-weight: 400;
     font-style: normal;
-    margin: 2rem;
 }
 
 .logo {
@@ -24,17 +24,28 @@ body {
     font-family: "Oleo Script", system-ui;
     font-weight: 700;
     font-style: normal;
+    padding: 2rem 2rem 0;
+    margin: auto;
 }
 
 .navigation {
-    border: 1px solid red;
     list-style: none;
-    padding: 2rem;
+    margin: 0 auto;
 }
 
 .navigation .nav-item {
-    border: 1px solid yellow;
     display: inline-block;
+    padding: .5rem;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.main {
+    margin: 2rem;
+    text-align: justify;
 }
 
 .slogan {
@@ -55,7 +66,6 @@ h2 {
     font-family: "Oleo Script", system-ui;
     font-weight: 700;
     font-style: normal;
-    justify-content: center;
 }
 
 .btn {
@@ -63,16 +73,67 @@ h2 {
     background-color: var(--color-third);
     border-radius: 1rem;
     border: none;
+    margin: 2rem;
 }
 
 p {
+    font-size: 1.2rem;
     line-height: 1.8rem;
 }
 
-p .reason {
+
+.secondary-img {
+    max-width: 80%;
+    margin: auto;
+}
+
+.reason {
+    padding-bottom: 2rem;
+    font-weight: bold;
+}
+
+.reasons>p{
     padding-bottom: 2rem;
 }
 
+.cta {
+    padding-bottom: 0 !important;
+}
+
+.follow-me .bi {
+    padding: .5rem !important;
+}
+
+.follow-me>p {
+    padding-bottom: 1rem;
+}
+
 .btn-whatsApp {
-    color: var(--color-btn-whatsapp);
+    color: var(--color-white);
+    background-color:var(--color-btn-whatsapp);
+    padding: .8rem;
+    border-radius: 1rem;
+    position: fixed;
+    right: 2rem;
+    bottom: 3rem;
+}
+
+footer, footer a {
+    background-color: var(--color-secondary);
+    color: var(--color-white);
+    padding: .5rem;
+}
+
+footer .logo {
+    color: var(--color-white);
+}
+
+footer p {
+    padding: 1rem;
+}
+
+/* Responsividade: */
+@media (min-width: 67rem) { 
+   
+       
 }
