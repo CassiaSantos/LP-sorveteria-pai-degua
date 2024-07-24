@@ -16,6 +16,7 @@ body {
     font-family: "PT Serif", serif;
     font-weight: 400;
     font-style: normal;
+    margin: 2rem;
 }
 
 .logo {
@@ -28,12 +29,11 @@ body {
 .navigation {
     border: 1px solid red;
     list-style: none;
-    padding: 3rem;
+    padding: 2rem;
 }
 
 .navigation .nav-item {
     border: 1px solid yellow;
-
     display: inline-block;
 }
 
@@ -43,6 +43,19 @@ body {
 
 .slogan span {
     color: var(--color-black);
+}
+
+.primary-img {
+    max-width: 80%;
+    border-radius: 50%;
+    margin: auto;
+}
+
+h2 {
+    font-family: "Oleo Script", system-ui;
+    font-weight: 700;
+    font-style: normal;
+    justify-content: center;
 }
 
 .btn {
