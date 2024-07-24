@@ -154,3 +154,31 @@ footer p {
 .pb-1 {
     padding-bottom: 1rem;
 }
+
+/* Responsividade: */
+@media (min-width: 67rem) { 
+    img {
+        max-width: 30%;
+    }
+    
+    h2 {
+        padding-top: 3rem;
+    }
+
+    .content {
+        display: flex;
+        -ms-flex-direction: column;
+        gap: 3rem;
+    }   
+}
+
+@media (min-width: 72rem) { 
+    body {
+        max-width: 80vW;
+        margin: auto;
+    }
+
+    footer {
+        width: 100vw;
+    }
+}
