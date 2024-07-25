@@ -173,12 +173,9 @@ footer p {
 }
 
 @media (min-width: 72rem) { 
-    body {
+    .main {
         max-width: 80vW;
         margin: auto;
-    }
-
-    footer {
-        width: 100vw;
+        padding-bottom: 3rem;
     }
 }
