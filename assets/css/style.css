@@ -156,9 +156,10 @@ footer p {
 }
 
 /* Responsividade: */
-@media (min-width: 67rem) { 
+@media (min-width: 56rem) { 
     img {
         max-width: 30%;
+        height: auto;
     }
     
     h2 {
