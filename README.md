@@ -14,13 +14,7 @@
 <a href="https://github.com/CassiaSantos/LP-sorveteria-pai-degua">https://github.com/CassiaSantos/LP-sorveteria-pai-degua</a>
 
 ## Versão Mobile
-<img src="assets\img\img_redme\img05.png">
-<img src="assets\img\img_redme\img06.png">
-<img src="assets\img\img_redme\img07.png">
-<img src="assets\img\img_redme\img08.png">
+<img src="assets\img\img_redme\SorveteriaPaiDegua_VersaoDesktop.png">
 
 ## Versão Desktop
-<img src="assets\img\img_redme\img01.png">
-<img src="assets\img\img_redme\img02.png">
-<img src="assets\img\img_redme\img03.png">
-<img src="assets\img\img_redme\img04.png">
+<img src="assets\img\img_redme\SorveteriaPaiDegua_VersaoMobile.png">
